@@ -11,14 +11,10 @@
             "id": "4652e85c6029ec0b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "markdown-examples.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "markdown-examples"
+              "title": "New tab"
             }
           }
         ]
@@ -184,17 +180,23 @@
       "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "4652e85c6029ec0b",
+  "active": "273d0aab987842c8",
   "lastOpenFiles": [
-    "pnpm-lock.yaml",
+    "docs/logo.png",
+    "docs/markdown-examples.md",
+    "docs/Index.md",
+    "docs/api-examples.md",
+    "docs/Paid Features",
+    "docs/Getting Started/Install the Obsidian Sheet Plus plugin.md",
+    "docs/Getting Started",
+    "docs",
     "api-examples.md",
     "Index.md",
-    "docs/markdown-examples.md",
-    "docs/api-examples.md",
-    "docs/index.md",
+    "logo.png",
     "markdown-examples.md",
+    "pnpm-lock.yaml",
+    "docs/index.md",
     "Getting Started/Install the Obsidian Sheet Plus plugin.md",
-    "docs",
     "package-lock.json",
     "package.json",
     "node_modules/fsevents/build/config.gypi",
@@ -202,10 +204,7 @@
     "node_modules/@esbuild/darwin-x64/README.md",
     "node_modules/@esbuild/darwin-x64/package.json",
     "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-vietnamese.woff2",
-    "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-latin.woff2",
     "node_modules/@docsearch/js/README.md",
-    "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-latin-ext.woff2",
-    "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-greek.woff2",
     "node_modules/@iconify-json/simple-icons/README.md",
     "node_modules/vite/README.md",
     "node_modules/vite/LICENSE.md",
@@ -219,8 +218,6 @@
     "node_modules/@docsearch/css/README.md",
     "node_modules/vitepress/template/markdown-examples.md",
     "node_modules/vitepress/template/index.md",
-    "node_modules/vitepress/template/api-examples.md",
-    "node_modules/@types/markdown-it/README.md",
-    "node_modules/@vueuse/integrations/README.md"
+    "node_modules/vitepress/template/api-examples.md"
   ]
 }

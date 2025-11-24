@@ -47,7 +47,6 @@ const teekConfig = defineTeekConfig({
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/',
   title: "Obsidian Sheet Plus",
   description: "Obsidian Sheet Plus User Guide",
   extends: teekConfig,
