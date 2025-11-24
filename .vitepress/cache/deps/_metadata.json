@@ -1,37 +1,37 @@
 {
-  "hash": "a465933c",
-  "configHash": "aca91141",
-  "lockfileHash": "38bba34f",
-  "browserHash": "e4d89861",
+  "hash": "61346ac7",
+  "configHash": "20b27a32",
+  "lockfileHash": "78f1cb20",
+  "browserHash": "1e41babd",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "4d630f49",
+      "fileHash": "e26b5098",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
-      "src": "../../../node_modules/.pnpm/@vue+devtools-api@8.0.5/node_modules/@vue/devtools-api/dist/index.js",
+      "src": "../../../node_modules/.pnpm/@vue+devtools-api@7.7.9/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "b0e7a27b",
+      "fileHash": "75f90de5",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
-      "src": "../../../node_modules/.pnpm/@vueuse+core@14.0.0_vue@3.5.24/node_modules/@vueuse/core/dist/index.js",
+      "src": "../../../node_modules/.pnpm/@vueuse+core@12.8.2/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "f4b88d64",
+      "fileHash": "9ba93917",
       "needsInterop": false
     },
     "vitepress-theme-teek": {
-      "src": "../../../node_modules/.pnpm/vitepress-theme-teek@1.5.2_vitepress@2.0.0-alpha.15_postcss@8.5.6__vue@3.5.24/node_modules/vitepress-theme-teek/es/index.mjs",
+      "src": "../../../node_modules/.pnpm/vitepress-theme-teek@1.5.2_vitepress@1.6.3_@algolia+client-search@5.44.0_postcss@8.5.6__80362d3ed6f149befbb1cffe3addfb4b/node_modules/vitepress-theme-teek/es/index.mjs",
       "file": "vitepress-theme-teek.js",
-      "fileHash": "a8ac4676",
+      "fileHash": "e41a2424",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-DX2RTWYH": {
-      "file": "chunk-DX2RTWYH.js"
+    "chunk-ZK4JXOYH": {
+      "file": "chunk-ZK4JXOYH.js"
     },
     "chunk-PZ5AY32C": {
       "file": "chunk-PZ5AY32C.js"
