@@ -40,10 +40,14 @@ const teekConfig = defineTeekConfig({
       },
     },
   ],
+  articleUpdate: {
+    enabled: false, // 是否启用文章最近更新栏
+  },
 });
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/',
   title: "Obsidian Sheet Plus",
   description: "Obsidian Sheet Plus User Guide",
   extends: teekConfig,
@@ -51,19 +55,19 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
     nav: [
-      { text: 'Home', link: '/index' },
+      { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    // sidebar: [
+    //   {
+    //     text: 'Examples',
+    //     items: [
+    //       { text: 'Markdown Examples', link: '/markdown-examples' },
+    //       { text: 'Runtime API Examples', link: '/api-examples' }
+    //     ]
+    //   }
+    // ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ljcoder2015/obsidian-sheet-plus' }
