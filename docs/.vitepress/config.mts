@@ -57,19 +57,23 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
-
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ljcoder2015/obsidian-sheet-plus' }
     ]
-  }
+  },
+  sitemap: {
+      hostname: "https://docs.ljcoder.com", // ** 换成你的域名
+      transformItems: (items) => {
+        const permalinkItemBak: typeof items = [];
+        // 使用永久链接生成 sitemap
+        const permalinks = (globalThis as any).VITEPRESS_CONFIG.site.themeConfig
+          .permalinks;
+        items.forEach((item) => {
+          const permalink = permalinks?.map[item.url];
+          if (permalink)
+            permalinkItemBak.push({ url: permalink, lastmod: item.lastmod });
+        });
+        return [...items, ...permalinkItemBak];
+      },
+    },
 })

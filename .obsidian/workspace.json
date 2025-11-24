@@ -182,6 +182,8 @@
   },
   "active": "273d0aab987842c8",
   "lastOpenFiles": [
+    "docs/public/logo.png",
+    "docs/public",
     "docs/logo.png",
     "docs/markdown-examples.md",
     "docs/Index.md",
@@ -203,7 +205,6 @@
     "node_modules/fsevents/build",
     "node_modules/@esbuild/darwin-x64/README.md",
     "node_modules/@esbuild/darwin-x64/package.json",
-    "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-vietnamese.woff2",
     "node_modules/@docsearch/js/README.md",
     "node_modules/@iconify-json/simple-icons/README.md",
     "node_modules/vite/README.md",
