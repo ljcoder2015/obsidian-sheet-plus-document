@@ -60,7 +60,7 @@ const teekConfig = defineTeekConfig({
   },
   footerGroup:[
     {
-      title: "Contact    ",
+      title: "Contact",
       links: [
         { name: "Issue", link: "https://github.com/ljcoder2015/obsidian-sheet-plus/issues" },
         { name: "Discord", link: "https://discord.gg/fufpbG4tJg" },
@@ -79,6 +79,7 @@ const teekConfig = defineTeekConfig({
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/',
   title: "Obsidian Sheet Plus",
   description: "Obsidian Sheet Plus User Guide",
   extends: teekConfig,
@@ -86,7 +87,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
     nav: [
-      { text: 'Home', link: '/index' },
+      { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/installation', activeMatch: '/guide/' },
       { text: 'Price', link: '/price/activate/en', activeMatch: '/price/' }
     ],
