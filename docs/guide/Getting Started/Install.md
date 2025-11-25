@@ -1,3 +1,11 @@
+---
+title: Installation
+permalink: /guide/installation
+categories:
+  - Getting Started
+tags:
+  - install
+---
 
 **To install the Obsidian Sheet Plus plugin:**
 

@@ -11,10 +11,14 @@
             "id": "4652e85c6029ec0b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/Index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Index"
             }
           }
         ]
@@ -180,45 +184,46 @@
       "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "273d0aab987842c8",
+  "active": "4652e85c6029ec0b",
   "lastOpenFiles": [
+    "docs/api-examples.md",
+    "docs/guide/Getting Started/Install.md",
+    "docs/price/Purchase Activation Code.md",
+    "docs/price/购买激活码.md",
+    "docs/price/Tutorial for Purchase and Activation.md",
+    "docs/price/购买使用教程.md",
+    "docs/price/Tutorial for Purchase and Activation_副本.md",
+    "docs/guide/Getting Started/Install the Obsidian Sheet Plus plugin.md",
+    "docs/guide/Getting Started",
+    "docs/guide/getting-tarted/Install the Obsidian Sheet Plus plugin.md",
+    "docs/guide/getting-tarted",
+    "docs/guide/getting Started/Install the Obsidian Sheet Plus plugin.md",
+    "docs/guide/getting Started",
+    "docs/price",
+    "docs/guide/Paid Features",
+    "docs/guide",
+    "docs/Guide/Getting Started/Install the Obsidian Sheet Plus plugin.md",
+    "docs/Guide/Getting Started",
+    "docs/Guide/Paid Features",
+    "docs/Price",
+    "docs/Buy",
     "docs/public/logo.png",
-    "docs/public",
     "docs/logo.png",
     "docs/markdown-examples.md",
     "docs/Index.md",
-    "docs/api-examples.md",
-    "docs/Paid Features",
     "docs/Getting Started/Install the Obsidian Sheet Plus plugin.md",
-    "docs/Getting Started",
-    "docs",
     "api-examples.md",
     "Index.md",
     "logo.png",
     "markdown-examples.md",
-    "pnpm-lock.yaml",
     "docs/index.md",
     "Getting Started/Install the Obsidian Sheet Plus plugin.md",
-    "package-lock.json",
-    "package.json",
-    "node_modules/fsevents/build/config.gypi",
-    "node_modules/fsevents/build",
     "node_modules/@esbuild/darwin-x64/README.md",
-    "node_modules/@esbuild/darwin-x64/package.json",
     "node_modules/@docsearch/js/README.md",
     "node_modules/@iconify-json/simple-icons/README.md",
     "node_modules/vite/README.md",
     "node_modules/vite/LICENSE.md",
     "node_modules/vue/README.md",
-    "node_modules/vitepress/README.md",
-    "node_modules/focus-trap/SECURITY.md",
-    "node_modules/focus-trap/README.md",
-    "node_modules/focus-trap/CHANGELOG.md",
-    "node_modules/@shikijs/core/README.md",
-    "node_modules/@vueuse/core/README.md",
-    "node_modules/@docsearch/css/README.md",
-    "node_modules/vitepress/template/markdown-examples.md",
-    "node_modules/vitepress/template/index.md",
-    "node_modules/vitepress/template/api-examples.md"
+    "node_modules/vitepress/README.md"
   ]
 }

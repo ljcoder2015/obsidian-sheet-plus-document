@@ -30,6 +30,7 @@ const teekConfig = defineTeekConfig({
       repoId: "R_kgDOQXO7zg",
       category: "Document Comments",
       categoryId: "DIC_kwDOQXO7zs4CyWjM",
+      lang: "en"
     },
   },
   siteAnalytics: [
@@ -43,6 +44,37 @@ const teekConfig = defineTeekConfig({
   articleUpdate: {
     enabled: false, // 是否启用文章最近更新栏
   },
+  footerInfo: {
+    // 主题版权配置
+    theme: {
+      show: false, // 是否显示主题版权，建议显示
+      name: "", // 自定义名称
+      link: "", // 自定义链接
+    },
+    // 博客版权配置
+    copyright: {
+      show: true, // 是否显示博客版权
+      createYear: 2025, // 创建年份
+      suffix: "ljcoder", // 后缀
+    },
+  },
+  footerGroup:[
+    {
+      title: "Contact    ",
+      links: [
+        { name: "Issue", link: "https://github.com/ljcoder2015/obsidian-sheet-plus/issues" },
+        { name: "Discord", link: "https://discord.gg/fufpbG4tJg" },
+        { name: "Email", link: "mailto:ljcoder@163.com" },
+      ],
+    },
+    {
+      title: "Activation Code",
+      links: [
+        { name: "Purchase", link: "/price/activate/en" },
+        { name: "购买", link: "/price/activate/zh_cn" },
+      ],
+    },
+  ]
 });
 
 // https://vitepress.dev/reference/site-config
@@ -55,11 +87,20 @@ export default defineConfig({
     logo: '/logo.png',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Guide', link: '/guide/installation', activeMatch: '/guide/' },
+      { text: 'Price', link: '/price/activate/en', activeMatch: '/price/' }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ljcoder2015/obsidian-sheet-plus' }
-    ]
+    ],
+    search: {
+      provider: "local",
+    },
+    editLink: {
+      text: "Edit this page on GitHub",
+      pattern:
+        "https://github.com/ljcoder2015/ljcoder2015.github.io/edit/main/docs/:path",
+    },
   },
   sitemap: {
       hostname: "https://docs.ljcoder.com", // ** 换成你的域名
