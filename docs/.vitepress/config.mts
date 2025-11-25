@@ -26,10 +26,10 @@ const teekConfig = defineTeekConfig({
     // 评论区配置项，根据 provider 不同而不同，具体看对应官网的使用介绍
     options: {
       // giscus 配置，官网：https://giscus.app/zh-CN
-      repo: "ljcoder2015/ljcoder2015.github.io",
-      repoId: "R_kgDOQXO7zg",
+      repo: "ljcoder2015/obsidian-sheet-plus-document",
+      repoId: "R_kgDOQckxEg",
       category: "Document Comments",
-      categoryId: "DIC_kwDOQXO7zs4CyWjM",
+      categoryId: "DIC_kwDOQckxEs4Cy_yo",
       lang: "en"
     },
   },
