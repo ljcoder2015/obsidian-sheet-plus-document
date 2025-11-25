@@ -86,7 +86,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Home', link: '/index' },
       { text: 'Guide', link: '/guide/installation', activeMatch: '/guide/' },
       { text: 'Price', link: '/price/activate/en', activeMatch: '/price/' }
     ],
