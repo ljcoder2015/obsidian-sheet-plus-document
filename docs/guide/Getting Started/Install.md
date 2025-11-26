@@ -13,18 +13,18 @@ tags:
 2. Navigate to _Settings > Community Plugins_.
 
 
-![settings](./images/image.png)
+![settings](../../assets/images/setting.png)
 
 
 3. Search for **Sheet Plus**.
 
 
-![search](./images/image-1.png)
+![search](../../assets/images/image-1.png)
 
 
 4. Click **Install**, then **Enable**.
 
 
-![install](./images/image-2.png)
+![install](../../assets/images/image-2.png)
 
-![enable](./images/image-3.png)
+![enable](../../assets/images/image-3.png)
