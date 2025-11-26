@@ -1,16 +1,21 @@
 ---
 title: Purchase Activation Code
-date: 2025-03-05 21:25:02
 permalink: /price/activate/en
 categories:
   - price
 tags:
   - activate
 ---
-1. Make the payment.
+## Purchase Activation Code
+### Go to the [product page](https://ko-fi.com/s/353d33a2dd) to purchase.
+![shop](../assets/images/shop.jpeg)
+### Check your email for the activation code.
+![email](../assets/images/email.jpeg)
 
-2. Check your email for the activation code.
+## Activate the Plugin
+### Enter the activation code to activate.
+- Open Obsidian settings
+- Switch to the plugin settings page
+- Enter the activation code to activate
 
-4. Enter the activation code to activate.
-[[附件/dfd3a7d514b5cd6d29ab2eb1cfcd2c39_MD5.jpeg|   ]]
-![[附件/dfd3a7d514b5cd6d29ab2eb1cfcd2c39_MD5.jpeg]]
+![activate](../assets/images/image.png)

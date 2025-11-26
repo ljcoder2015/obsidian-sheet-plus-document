@@ -4,7 +4,6 @@ layout: home
 
 hero:
   name: "Obsidian Sheet Plus"
-  text: "Obsidian Sheet Plus User Guide"
   tagline: Committed to creating the most user-friendly smart spreadsheet experience in Obsidian.
   actions:
     - theme: brand
