@@ -10,6 +10,7 @@ const description = [
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/',
   extends: teekConfig,
   title: "Obsidian Sheet Plus",
   description: description,
@@ -94,7 +95,7 @@ export default defineConfig({
     editLink: {
       text: "Edit this page on GitHub",
       pattern:
-        "https://github.com/ljcoder2015/ljcoder2015.github.io/edit/main/docs/:path",
+        "https://github.com/ljcoder2015/obsidian-sheet-plus-document/edit/main/docs/:path",
     },
 
   },
