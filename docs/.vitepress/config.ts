@@ -78,10 +78,7 @@ export default defineConfig({
         link: "/guide/installation",
         activeMatch: "/guide/",
       },
-      { text: "price", link: "/price/activate/en", activeMatch: "/price/" },
-      {
-        text: "archives", link: "/archives" 
-      }
+      { text: "price", link: "/price/activate/en", activeMatch: "/price/" }
     ],
     socialLinks: [
       {
