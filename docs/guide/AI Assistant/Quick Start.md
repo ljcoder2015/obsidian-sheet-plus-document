@@ -10,6 +10,9 @@ sidebarSort: 200
 :::
 
 ## Get Your API Key
+
+Users in China can use Tongyi Qianwen (Beijing), while users outside China can use Tongyi Qianwen (Singapore) or OpenAI.
+
 ### Tongyi Qianwen
 - Go to [Tongyi Qianwen](https://bailian.console.aliyun.com/?spm=5176.29619931.J_SEsSjsNv72yRuRFS2VknO.2.74cd10d721z1Wp&tab=api#/api/?type=model&url=2712195) to obtain your API Key.
 
