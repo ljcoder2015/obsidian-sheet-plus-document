@@ -48,9 +48,8 @@ sidebarSort: 200
 - `Base URL`: The API endpoint; it will be updated automatically after selecting the platform and usually does not need manual modification.
 
 ::: warning
-- 此功能为实验性功能，欢迎反馈，后续会根据反馈进行优化。可以通过以下方式反馈问题：
-  - 提交 [GitHub discussions](https://github.com/ljcoder2015/obsidian-sheet-plus/discussions/categories/ai-assistant)
-  - 加入 [Discord 服务器]((https://discord.gg/fufpbG4tJg) 并在 #ai-assistant 频道中反馈
-  - 发送邮件至：[ljcoder@163.com](mailto:ljcoder@163.com)
-
+- This is an experimental feature; feedback is welcome and will be used for future improvements. You can provide feedback through:
+  - Submit a [GitHub discussion](https://github.com/ljcoder2015/obsidian-sheet-plus/discussions/categories/ai-assistant)
+  - Join the [Discord server](https://discord.gg/fufpbG4tJg) and share your thoughts in the #ai-assistant channel
+  - Email: [ljcoder@163.com](mailto:ljcoder@163.com)
 :::
