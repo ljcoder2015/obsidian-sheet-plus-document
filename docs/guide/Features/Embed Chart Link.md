@@ -66,6 +66,8 @@ Once rendered, the chart will appear **directly inside the note**.
 
 The chart will stay in sync with the spreadsheet data.
 
+![alt text](image-8.png)
+
 ## Key Behavior
 
 * ✅ The embedded chart updates automatically when the data changes
