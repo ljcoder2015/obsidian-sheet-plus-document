@@ -4,7 +4,7 @@ permalink: /guide/features/embed-chart-link
 sidebarSort: 100
 ---
 
-# Embed Chart Link<Badge text="License Required" type="warning" />
+# Embed Chart Link <Badge text="License Required" type="warning" />
 
 ::: warning License Required
 Embed Chart Link features are **available only after license activation**.

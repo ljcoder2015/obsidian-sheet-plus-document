@@ -4,7 +4,7 @@ permalink: /guide/features/import-export
 sidebarSort: 200
 ---
 
-# Import & Export (Sheet Plus)<Badge text="License Required" type="warning" />
+# Import & Export (Sheet Plus) <Badge text="License Required" type="warning" />
 
 ::: warning License Required
 Import and Export features are **available only after license activation**.
