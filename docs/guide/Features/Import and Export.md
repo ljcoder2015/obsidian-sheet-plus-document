@@ -70,22 +70,6 @@ Choose a location and confirm export.
 
 ![alt text](image-3.png)
 
----
-
-## License Requirement
-
-> 🔐 **License Required**
-
-Import & Export features are **disabled by default**.
-
-To enable them:
-
-1. Open **Settings → Sheet Plus**
-2. Enter your **license code**
-3. Restart Obsidian if required
-
-Once activated, all Import & Export features will be unlocked.
-
 ## Troubleshooting
 
 **Import / Export button is disabled**
