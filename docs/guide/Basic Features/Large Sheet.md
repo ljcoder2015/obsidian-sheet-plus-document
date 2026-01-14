@@ -1,4 +1,10 @@
-# Large Sheet Settings
+---
+title: Large Sheet
+permalink: /guide/features/large-sheet
+sidebarSort: 230
+---
+
+# Large Sheet
 
 ## About Large Sheet
 - Regular Sheets use the `.md` file extension and are indexed by Obsidian. When a file becomes too large, it can cause Obsidian to index for a long time or even get stuck and fail to finish.

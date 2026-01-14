@@ -1,8 +1,14 @@
-# Number Format Locale Settings
+---
+title: Number Format Locale
+permalink: /guide/features/number-format-locale
+sidebarSort: 250
+---
+
+# Number Format Locale
 
 Number formatting varies across different locales. You can switch between these formats using this setting.
 
-```example
+```
 // For example
 1234567.89
 1,234,567.89 // Chinese

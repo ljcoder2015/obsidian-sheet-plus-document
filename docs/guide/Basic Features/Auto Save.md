@@ -1,7 +1,7 @@
 ---
 title: Auto Save
 permalink: /guide/features/auto-save
-sidebarSort: 800
+sidebarSort: 80
 ---
 
 # Auto Save

@@ -1,3 +1,9 @@
+---
+title: Custom Font
+permalink: /guide/features/custom-font
+sidebarSort: 220
+---
+
 # Custom Font
 
 ## Setting the Font Directory
