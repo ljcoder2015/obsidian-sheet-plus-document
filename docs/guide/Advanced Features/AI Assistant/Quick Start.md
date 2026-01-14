@@ -4,9 +4,10 @@ permalink: /guide/ai-assistant/quick-start
 sidebarSort: 200
 ---
 
-# Quick Start
-::: note
-- AI Assistant is a paid plugin feature; you need to purchase an activation code before use.
+# Quick Start <Badge text="License Required" type="warning" />
+
+::: warning License Required
+AI Assistant features are **available only after license activation**.
 :::
 
 ## Get Your API Key

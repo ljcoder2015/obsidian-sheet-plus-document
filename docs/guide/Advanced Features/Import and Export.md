@@ -1,7 +1,7 @@
 ---
 title: Import & Export
 permalink: /guide/features/import-export
-sidebarSort: 200
+sidebarSort: 100
 ---
 
 # Import & Export <Badge text="License Required" type="warning" />

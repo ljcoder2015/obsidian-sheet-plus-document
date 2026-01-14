@@ -1,7 +1,7 @@
 ---
 title: Embed Chart Link
 permalink: /guide/features/embed-chart-link
-sidebarSort: 100
+sidebarSort: 200
 ---
 
 # Embed Chart Link <Badge text="License Required" type="warning" />

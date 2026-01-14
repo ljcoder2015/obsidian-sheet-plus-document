@@ -3,7 +3,11 @@ title: Introduction
 permalink: /guide/ai-assistant/introduction
 sidebarSort: 100
 ---
-# Introduction
+# Introduction <Badge text="License Required" type="warning" />
+
+::: warning License Required
+AI Assistant features are **available only after license activation**.
+:::
 
 The AI Assistant can operate spreadsheets using natural language, such as inserting data, setting cell background colors, applying font styles, and generating formulas.
 

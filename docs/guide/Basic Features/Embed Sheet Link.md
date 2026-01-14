@@ -1,4 +1,4 @@
-# Embed Link Settings
+# Embed Sheet Link
 
 ![alt text](image-2.png)
 
@@ -16,4 +16,4 @@
 ## Footer
 - Toggle Sheet Footer Visibility of the embedded link. Default is `false`.
 
-![alt text](image-4.png)
+![alt text](image-12.png)

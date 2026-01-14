@@ -71,6 +71,7 @@ export const teekConfig = defineTeekConfig({
   articleShare: { enabled: true },
   vitePlugins: {
     sidebarOption: {
+      ignoreIndexMd: true,
       initItems: false,
     },
   },
