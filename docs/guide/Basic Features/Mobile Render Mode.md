@@ -14,8 +14,8 @@ sidebarSort: 240
 
 - mobile mode
 
-<img style="height: 600px" src="./IMG_2214.PNG" />
+<img style="height: 600px" src="./IMG_2214.png" />
 
 - desktop mode
 
-<img style="height: 600px" src="./IMG_2213.PNG" />
+<img style="height: 600px" src="./IMG_2213.png" />
