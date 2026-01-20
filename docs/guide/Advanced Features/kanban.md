@@ -4,7 +4,12 @@ permalink: /guide/features/kanban
 sidebarSort: 300
 ---
 
-# Kanban
+# Kanban <Badge text="License Required" type="warning" />
+
+::: warning License Required
+Kanban features are **available only after license activation**.
+:::
+
 Kanban view can display table data in Kanban mode, grouping data according to a specified field for easier viewing and management.
 
 ## Creating a Kanban
