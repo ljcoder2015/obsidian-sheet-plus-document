@@ -12,6 +12,12 @@ sidebarSort: 240
 
 ![alt text](image-7.png)
 
+- Quick Switch
+
+<img style="display: inline-block; height: 600px" src="./image-32.png" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img style="display: inline-block; height: 600px" src="./changeRenderMode.gif" />
+
 - mobile mode
 
 <img style="height: 600px" src="./IMG_2214.png" />

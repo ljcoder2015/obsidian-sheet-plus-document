@@ -78,7 +78,8 @@ export default defineConfig({
         link: "/guide/installation",
         activeMatch: "/guide/",
       },
-      { text: "Price", link: "/price/activate/en", activeMatch: "/price/" }
+      { text: "Price", link: "/price/activate/en", activeMatch: "/price/" },
+      { text: "Template", link: "/template/how-to-use", activeMatch: "/template/" }
     ],
     socialLinks: [
       {
