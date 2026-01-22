@@ -12,16 +12,14 @@ sidebarSort: 240
 
 ![alt text](image-7.png)
 
-- Quick Switch
+## Quick Switch
 
-<img style="display: inline-block; height: 600px" src="./image-32.png" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img style="display: inline-block; height: 600px" src="./changeRenderMode.gif" />
+  - mobile
 
-- mobile mode
+  <img style="display: inline-block; height: 600px" src="./image-32.png" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img style="display: inline-block; height: 600px" src="./changeRenderMode.gif" />
 
-<img style="height: 600px" src="./IMG_2214.png" />
+  - desktop
 
-- desktop mode
-
-<img style="height: 600px" src="./IMG_2213.png" />
+  ![alt text](image-34.png)
