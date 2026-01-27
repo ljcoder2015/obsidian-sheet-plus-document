@@ -4,7 +4,7 @@ permalink: /template/personal
 sidebarSort: 200
 ---
 
-# Personal
+---
 
 ::: imgCard
 
