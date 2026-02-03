@@ -17,6 +17,10 @@ It also supports AI clients like Claude, which can call the REST API by adding t
 
 ## How to Use
 
+::: video youtube
+sNDuxNgE9d0
+:::
+
 ### Calling the REST API via HTTP Requests
 
 You can call the REST API using HTTP requests. This allows you to integrate spreadsheet operations into your automation scripts.
