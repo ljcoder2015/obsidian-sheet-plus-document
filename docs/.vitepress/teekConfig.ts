@@ -14,18 +14,18 @@ export const teekConfig = defineTeekConfig({
     showCategory: false, // 是否展示分类
     showTag: false, // 是否展示标签
   },
-  comment: {
-    provider: "giscus", // 评论区提供者
-    // 评论区配置项，根据 provider 不同而不同，具体看对应官网的使用介绍
-    options: {
-      // giscus 配置，官网：https://giscus.app/zh-CN
-      repo: "ljcoder2015/obsidian-sheet-plus-document",
-      repoId: "R_kgDOQckxEg",
-      category: "Document Comments",
-      categoryId: "DIC_kwDOQckxEs4Cy_yo",
-      lang: "en"
-    },
-  },
+  // comment: {
+  //   provider: "giscus", // 评论区提供者
+  //   // 评论区配置项，根据 provider 不同而不同，具体看对应官网的使用介绍
+  //   options: {
+  //     // giscus 配置，官网：https://giscus.app/zh-CN
+  //     repo: "ljcoder2015/obsidian-sheet-plus-document",
+  //     repoId: "R_kgDOQckxEg",
+  //     category: "Document Comments",
+  //     categoryId: "DIC_kwDOQckxEs4Cy_yo",
+  //     lang: "en"
+  //   },
+  // },
   siteAnalytics: [
     {
       provider: "google",
