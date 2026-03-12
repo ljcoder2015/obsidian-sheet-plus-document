@@ -17,6 +17,23 @@ Sheet Plus will now generate a **sheet link** and copy it to your clipboard.
 
 ![alt text](image-16.png)
 
+Preview:
+
+![alt text](image-37.png)
+
+## Generate HTML Embed Link
+
+1. Select the data range
+2. **Right-click inside the sheet**
+3. Choose **`Embed Link`**
+4. Click **`Generate HTML Link`**
+
+![alt text](image-35.png)
+
+Preview:
+
+![alt text](image-36.png)
+
 ## Embed Link Setting
 
 ![alt text](image-2.png)
