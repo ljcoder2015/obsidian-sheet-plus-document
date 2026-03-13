@@ -8,27 +8,36 @@ sidebarSort: 100
 
 ## What is the REST API?
 
-The REST API allows you to access and manipulate spreadsheet data using the HTTP protocol.
-For example, you can retrieve data from a spreadsheet or update spreadsheet content through the REST API.
-
-It also supports AI clients like Claude, which can call the REST API by adding the `obsidian-sheet-plus-mcp-server`.
+After starting the REST API service, you can call tools in LLM clients (such as Claude, OpenClaw, etc.) to automatically process sheet data.
 
 ---
 ::: video youtube
 CHc6i6FEtxQ
 :::
 
-## How to Use
+## How to Use Claude for Automated Data Processing
 
-### Calling the REST API via Claude
+- Open the REST API configuration page
 
-You can also use Claude to call the REST API for automation.
+![alt text](image.png)
 
-1. Open the **Claude Desktop** application
-2. Open the **Settings** menu
-3. Go to the **Developer** tab in the settings page
-4. Click **Config** to configure the MCP Server
-5. In the REST API management page, click **Copy MCP Server Config**, then paste the configuration into the config file
-6. Restart Claude Desktop. You should see that the configuration has taken effect in the chat interface
-7. In the chat, enter the data you want to insert — Claude will automatically call the REST API to insert it
-8. The first time you use it, you’ll need to approve the MCP Server request. Click **Allow** to continue
+- Enable API Key authorization
+
+![alt text](image-1.png)
+
+- Start the REST API service
+
+![alt text](image-2.png)
+
+- Configure Claude
+  1. Open the **Claude Desktop** application
+  2. Open the **Settings** menu
+  3. Go to the **Developer** tab in the settings page
+  4. Click **Config** to configure the MCP Server
+  5. In the REST API management page, click **Copy MCP Server Config**, then paste the configuration into the config file
+
+  ![alt text](image-3.png)
+  
+  6. Restart Claude Desktop. You should see that the configuration has taken effect in the chat interface
+  7. In the chat, enter the data you want to insert — Claude will automatically call the REST API to insert it
+  8. The first time you use it, you’ll need to approve the MCP Server request. Click **Allow** to continue
