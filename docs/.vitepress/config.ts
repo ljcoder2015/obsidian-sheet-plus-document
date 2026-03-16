@@ -79,7 +79,7 @@ export default defineConfig({
         activeMatch: "/guide/",
       },
       { text: "Price", link: "/price/activate/en", activeMatch: "/price/" },
-      { text: "Template", link: "/template/how-to-use", activeMatch: "/template/" }
+      // { text: "Template", link: "/template/how-to-use", activeMatch: "/template/" }
     ],
     socialLinks: [
       {
