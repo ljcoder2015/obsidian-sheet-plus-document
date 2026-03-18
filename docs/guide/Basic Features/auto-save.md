@@ -20,5 +20,8 @@ After a table is modified, the data is not saved to the file immediately; instea
 ![alt text](image-6.png)
 
 ::: note
-When a file is opened for the first time, auto-save is triggered. If the file has not been modified and is deemed not needing to be saved, it will switch to the idle state.
+
+- When a file is opened for the first time, auto-save is triggered. If the file has not been modified and is deemed not needing to be saved, it will switch to the idle state.
+- Closing the current file will immediately trigger a save, but closing Obsidian will result in the loss of unsaved data.
+- For file recovery, please refer to the core plugin [File Recovery](https://help.obsidian.md/plugins/file-recovery) documentation
 :::
