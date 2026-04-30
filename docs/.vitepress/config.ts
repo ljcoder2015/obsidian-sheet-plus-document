@@ -18,6 +18,14 @@ export default defineConfig({
   lastUpdated: true,
   lang: "en",
   head: [
+    [
+      "script",
+      {},
+      `(function(){
+        var r=sessionStorage.getItem('vp-redirect');
+        if(r){sessionStorage.removeItem('vp-redirect');history.replaceState(null,'',r)}
+      })();`,
+    ],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:locale", content: "en" }],
     ["meta", { property: "og:title", content: "Obsidian Sheet Plus | Obsidian Plugin" }],
