@@ -114,7 +114,7 @@ const handleDownload = async () => {
         <line x1="12" y1="15" x2="12" y2="3" />
       </svg>
       <svg v-else class="loading-spinner" viewBox="0 0 24 24" fill="none">
-        <circle class="spinner-path" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="50 50" />
+        <circle class="spinner-path" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
       </svg>
     </div>
     <div class="download-info">
@@ -248,7 +248,9 @@ const handleDownload = async () => {
   animation: spin 1s linear infinite;
 
   .spinner-path {
-    animation: spin-dash 1.5s ease-in-out infinite;
+    stroke-dasharray: 63;
+    stroke-dashoffset: 0;
+    animation: spin-dash 1.4s ease-in-out infinite;
   }
 }
 
@@ -263,13 +265,16 @@ const handleDownload = async () => {
 
 @keyframes spin-dash {
   0% {
-    stroke-dashoffset: 100;
+    stroke-dashoffset: 63;
+    opacity: 1;
   }
   50% {
-    stroke-dashoffset: 25;
+    stroke-dashoffset: 16;
+    opacity: 0.8;
   }
   100% {
-    stroke-dashoffset: 100;
+    stroke-dashoffset: 0;
+    opacity: 0.6;
   }
 }
 
