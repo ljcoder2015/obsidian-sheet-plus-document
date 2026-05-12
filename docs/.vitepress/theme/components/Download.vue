@@ -30,23 +30,51 @@ const fileType = computed(() => {
 });
 
 const handleDownload = async () => {
-  try {
-    const response = await fetch(props.href);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
+  const isSameOrigin = window.location.origin === new URL(props.href).origin;
+  
+  if (isSameOrigin) {
     const link = document.createElement("a");
-    link.href = url;
+    link.href = props.href;
     link.download = props.filename || props.href.split("/").pop() || "download";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
-  } catch (error) {
-    console.error("Download failed:", error);
-    window.open(props.href, "_blank");
+  } else {
+    try {
+      const response = await fetch(props.href);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const contentDisposition = response.headers.get("Content-Disposition");
+      let filename = props.filename || props.href.split("/").pop() || "download";
+      
+      if (contentDisposition) {
+        const match = contentDisposition.match(/filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/);
+        if (match && match[1]) {
+          filename = match[1].replace(/['"]/g, "");
+        }
+      }
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.warn("Download via fetch failed, opening in new tab:", error);
+      const link = document.createElement("a");
+      link.href = props.href;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   }
 };
 </script>
