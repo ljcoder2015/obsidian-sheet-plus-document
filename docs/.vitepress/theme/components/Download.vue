@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref } from "vue";
 
 const props = defineProps<{
   href: string;
@@ -7,6 +7,8 @@ const props = defineProps<{
   type?: string;
   size?: string;
 }>();
+
+const isLoading = ref(false);
 
 const fileType = computed(() => {
   if (props.type) return props.type;
@@ -33,25 +35,72 @@ const isAbsoluteUrl = (url: string): boolean => {
   return /^https?:\/\//i.test(url);
 };
 
-const handleDownload = () => {
-  const link = document.createElement("a");
-  link.href = props.href;
-  link.download = props.filename || props.href.split("/").pop() || "download";
+const handleDownload = async () => {
+  if (isLoading.value) return;
+  
+  isLoading.value = true;
+  
+  const downloadFilename = props.filename || props.href.split("/").pop() || "download";
   
   if (isAbsoluteUrl(props.href)) {
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
+    try {
+      const response = await fetch(props.href);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = downloadFilename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.warn("Download via fetch failed, opening in new tab:", error);
+      const link = document.createElement("a");
+      link.href = props.href;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } finally {
+      isLoading.value = false;
+    }
+  } else {
+    try {
+      const link = document.createElement("a");
+      link.href = props.href;
+      link.download = downloadFilename;
+      document.body.appendChild(link);
+      
+      const clickEvent = new MouseEvent("click", {
+        bubbles: true,
+        cancelable: true,
+        view: window
+      });
+      
+      link.dispatchEvent(clickEvent);
+      
+      setTimeout(() => {
+        document.body.removeChild(link);
+        isLoading.value = false;
+      }, 500);
+    } catch (error) {
+      console.error("Download failed:", error);
+      isLoading.value = false;
+    }
   }
-  
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
 };
 </script>
 
 <template>
   <div
     class="download-container"
+    :class="{ 'is-loading': isLoading }"
     @click="handleDownload"
     role="button"
     tabindex="0"
@@ -59,10 +108,13 @@ const handleDownload = () => {
     @keydown.space="handleDownload"
   >
     <div class="download-icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <svg v-if="!isLoading" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
         <polyline points="7 10 12 15 17 10" />
         <line x1="12" y1="15" x2="12" y2="3" />
+      </svg>
+      <svg v-else class="loading-spinner" viewBox="0 0 24 24" fill="none">
+        <circle class="spinner-path" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="50 50" />
       </svg>
     </div>
     <div class="download-info">
@@ -78,6 +130,9 @@ const handleDownload = () => {
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M5 12h14M12 5l7 7-7 7" />
       </svg>
+    </div>
+    <div v-if="isLoading" class="download-loading-overlay">
+      <div class="loading-text">Downloading...</div>
     </div>
   </div>
 </template>
@@ -169,6 +224,71 @@ const handleDownload = () => {
 }
 
 .download-container:hover .download-arrow {
+  color: #667eea;
+}
+
+.download-container.is-loading {
+  pointer-events: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .download-arrow {
+    opacity: 0.5;
+  }
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+
+  .spinner-path {
+    animation: spin-dash 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-dash {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  50% {
+    stroke-dashoffset: 25;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+.download-loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-text {
+  font-size: 14px;
+  font-weight: 500;
   color: #667eea;
 }
 </style>
