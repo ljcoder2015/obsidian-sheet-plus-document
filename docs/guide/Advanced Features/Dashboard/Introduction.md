@@ -30,7 +30,6 @@ A dashboard is a visual representation of data that allows you to analyze it.
 
 ## Demo
 
-<Download href="https://github.com/ljcoder2015/obsidian-sheet-plus-document/blob/main/docs/guide/Advanced%20Features/Dashboard/dashboard-demo.md.zip" />
 <Download href="/downloads/dashboard-demo.md.zip" />
 
 Download the `dashboard-demo` file and drag it into Obsidian to view it.
