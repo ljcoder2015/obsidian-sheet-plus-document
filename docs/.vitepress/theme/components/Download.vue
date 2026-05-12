@@ -28,15 +28,37 @@ const fileType = computed(() => {
   };
   return types[ext || ""] || "File";
 });
+
+const handleDownload = async () => {
+  try {
+    const response = await fetch(props.href);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = props.filename || props.href.split("/").pop() || "download";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error("Download failed:", error);
+    window.open(props.href, "_blank");
+  }
+};
 </script>
 
 <template>
-  <a
-    :href="href"
-    :download="filename"
+  <div
     class="download-container"
-    target="_blank"
-    rel="noopener noreferrer"
+    @click="handleDownload"
+    role="button"
+    tabindex="0"
+    @keydown.enter="handleDownload"
+    @keydown.space="handleDownload"
   >
     <div class="download-icon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -59,7 +81,7 @@ const fileType = computed(() => {
         <path d="M5 12h14M12 5l7 7-7 7" />
       </svg>
     </div>
-  </a>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -74,6 +96,7 @@ const fileType = computed(() => {
   color: inherit;
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  cursor: pointer;
 
   &:hover {
     background: linear-gradient(135deg, #e8eaed 0%, #d0d4da 100%);
