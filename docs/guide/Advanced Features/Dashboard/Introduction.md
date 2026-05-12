@@ -1,9 +1,8 @@
-----------------
-
+---
 title: Introduction
 permalink: /guide/dashboard/introduction
 sidebarSort: 100
-----------------
+---
 
 # Introduction
 
