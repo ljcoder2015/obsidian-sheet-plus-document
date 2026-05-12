@@ -29,3 +29,5 @@ coverage
 *.sw?
 
 /**/.vitepress/cache/*
+.trae/
+backup_before_author_change.tar.gz
