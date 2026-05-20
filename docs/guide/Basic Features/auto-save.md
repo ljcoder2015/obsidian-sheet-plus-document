@@ -5,6 +5,7 @@ sidebarSort: 80
 ---
 
 # Auto Save
+
 After a table is modified, the data is not saved to the file immediately; instead, it is automatically saved every 30 seconds. You can check the save status in the status bar at the bottom.
 
 ::: note
@@ -13,6 +14,12 @@ After a table is modified, the data is not saved to the file immediately; instea
 - For file recovery, please refer to the core plugin [File Recovery](https://help.obsidian.md/plugins/file-recovery) documentation
 - When a file is opened for the first time, auto-save is triggered. If the file has not been modified and is deemed not needing to be saved, it will switch to the idle state.
 :::
+
+## Manual Save
+
+To manually save the table, click the save button in the toolbar.
+
+![alt text](image-41.png)
 
 ## Status Description
 

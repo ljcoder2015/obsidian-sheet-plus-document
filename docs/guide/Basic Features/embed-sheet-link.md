@@ -6,7 +6,7 @@ sidebarSort: 100
 
 # Embed Sheet Link
 
-## Generate a Chart Embed Link
+## Generate a Sheet Embed Link
 
 1. Select the data range
 2. **Right-click inside the sheet**
@@ -33,6 +33,12 @@ Preview:
 Preview:
 
 ![alt text](image-36.png)
+
+## Edit Embed Link
+
+If you want to edit the content of an embedded link, click the jump button to open the sheet in the right split pane. After editing and saving, the embedded link will automatically refresh to reflect the changes.
+
+![alt text](embed-link-update.gif)
 
 ## Embed Link Setting
 
