@@ -6,7 +6,7 @@ sidebarSort: 100
 
 # Obsidian Sheet Plus Skill
 
-:::
+::: tip
 Skill does not depend on MCP Server.
 You can use it in LLM clients (such as Claude, OpenClaw, OpenCode, etc.) directly.
 You only need to install the skill in OpenCode.
