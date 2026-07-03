@@ -10,6 +10,12 @@ sidebarSort: 100
 
 After starting the REST API service, you can call tools in LLM clients (such as Claude, OpenClaw, etc.) to automatically process sheet data.
 
+## Obsidian Sheet Plus Skill
+
+If you don't want to call the REST API through the MCP Server, you can use the `obsidian-sheet-plus` skill directly in your LLM client.
+
+For usage instructions, please jump to the [Skill](/guide/rest-api/skill) page.
+
 ---
 ::: video youtube
 CHc6i6FEtxQ
