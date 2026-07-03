@@ -16,6 +16,10 @@ With this skill, you can manipulate spreadsheet data created by the Obsidian She
 
 ## Installing the Skill
 
+Github: [https://github.com/ljcoder2015/obsidian-sheet-plus-skill](https://github.com/ljcoder2015/obsidian-sheet-plus-skill)
+
+Clawhub: [https://clawhub.ai/ljcoder2015/skills/obsidian-sheet-plus-skill](https://clawhub.ai/ljcoder2015/skills/obsidian-sheet-plus-skill)
+
 Taking OpenCode as an example, simply enter the following prompt to install the skill:
 
 ```
