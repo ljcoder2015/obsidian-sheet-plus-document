@@ -44,19 +44,22 @@ If you want to edit the content of an embedded link, click the jump button to op
 
 ![alt text](image-2.png)
 
-## Height
+## Height Rendering Modes
 
-- The height of the embedded link. Default is `300px`.
+The embed link `![[sheet.md]]` supports two rendering modes, controlled in **Settings**:
 
-![alt text](image-1.png)
+| Mode | Behavior |
+|------|----------|
+| **Auto** | Height expands naturally based on the sheet content |
+| **Custom** | Fixed height with scroll when content overflows |
 
-::: tip TIP
-The generated link looks like the following
+**Explicit height `<150>` always takes priority** over both `auto` and `custom` modes. For example:
+
 ```
-![[Excel 2025-07-31 09.37.29.univer.md#Sheet1|A1:D4<300>]]
+![[sheet.md|A1:D4<500>]]
 ```
-If you want to adjust the rendering height of this link individually, you can change the number inside `<300>`.
-:::
+
+This link will always render at `500px` height regardless of the global mode setting.
 
 ## Jump Button
 - Show a jump button at the top of the embedded link. Default is `true`.
