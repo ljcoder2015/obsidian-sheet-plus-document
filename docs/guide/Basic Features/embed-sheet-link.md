@@ -53,7 +53,7 @@ The embed link `![[sheet.md]]` supports two rendering modes, controlled in **Set
 | **Auto** | Height expands naturally based on the sheet content |
 | **Custom** | Fixed height with scroll when content overflows |
 
-**Explicit height `<150>` always takes priority** over both `auto` and `custom` modes. For example:
+**Explicit height `<500>` always takes priority** over both `auto` and `custom` modes. For example:
 
 ```
 ![[sheet.md|A1:D4<500>]]
