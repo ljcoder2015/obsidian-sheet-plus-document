@@ -14,7 +14,7 @@ features:
   - title: Spreadsheet
     details: Render spreadsheets using Univer, with support for formulas, filtering, sorting, find and replace, images, comments, hyperlinks, and more.
   - title: Multi-View
-    details: Supports multiple view modes, including Kanban view, Grouped view, Calendar view, Gantt chart, and more.
+    details: Supports multiple view modes, including Kanban view, Calendar view, Dashboard, and more.
   - title: Embed Link
     details: Supports embedding links to other files within the Obsidian vault.
 ---
