@@ -1,10 +1,10 @@
 ---
-title: Quick Start
+title: Claude
 permalink: /guide/rest-api/quick-start
 sidebarSort: 100
 ---
 
-# Quick Start
+# Claude
 
 ## What is the REST API?
 
@@ -14,7 +14,7 @@ After starting the REST API service, you can call tools in LLM clients (such as 
 
 If you don't want to call the REST API through the MCP Server, you can use the `obsidian-sheet-plus` skill directly in your LLM client.
 
-For usage instructions, please jump to the [Skill](/guide/rest-api/skill) page.
+For usage instructions, please jump to the [OpenCode](/guide/rest-api/skill) page.
 
 ---
 ::: video youtube
