@@ -4,20 +4,23 @@ permalink: /guide/rest-api/skill
 sidebarSort: 100
 ---
 
+Install the `obsidian-sheet-plus` skill in OpenCode to automate spreadsheet data processing through the Sheet Plus REST API.
+
 ## Installing Obsidian Sheet Plus Skill
 
-> Github: [https://github.com/ljcoder2015/obsidian-sheet-plus-skill](https://github.com/ljcoder2015/obsidian-sheet-plus-skill)
->
-> Clawhub: [https://clawhub.ai/ljcoder2015/skills/obsidian-sheet-plus-skill](https://clawhub.ai/ljcoder2015/skills/obsidian-sheet-plus-skill)
+::: tip Skill Sources
+- Github: [https://github.com/ljcoder2015/obsidian-sheet-plus-skill](https://github.com/ljcoder2015/obsidian-sheet-plus-skill)
+- Clawhub: [https://clawhub.ai/ljcoder2015/skills/obsidian-sheet-plus-skill](https://clawhub.ai/ljcoder2015/skills/obsidian-sheet-plus-skill)
+:::
 
 Enter the following prompt in OpenCode to automatically install the skill globally (so it is available in all your projects):
 
 ```text
-https://clawhub.ai/ljcoder2015/skills/obsidian-sheet-plus-skill install this skill globally
+https://github.com/ljcoder2015/obsidian-sheet-plus-skill install this skill globally
 ```
 
-![skill install](./opencode-install.gif)
- 
+![skill install](./opencode-install-github.gif)
+
 ## How to Use
 
 After installation, you need to restart OpenCode to use the skill.
@@ -28,7 +31,8 @@ Here is an example of using the `obsidian-sheet-plus` skill to fetch today's sto
 First, create a new sheet in Obsidian and start the REST API service.
 
 Enter the following prompt:
-```
+
+```text
 Get today's U.S. stock prices and insert them into the sheet.
 ```
 

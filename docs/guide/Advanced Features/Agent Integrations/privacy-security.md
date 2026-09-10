@@ -1,10 +1,8 @@
 ---
 title: Privacy and Security
 permalink: /guide/rest-api/privacy-security
-sidebarSort: 200
+sidebarSort: 800
 ---
-
-# Privacy and Security
 
 ## Data Transmission Security
 
