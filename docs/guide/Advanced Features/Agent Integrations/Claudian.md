@@ -6,6 +6,10 @@ sidebarSort: 300
 
 Install the Claudian plugin to automate spreadsheet data processing with the Sheet Plus REST API.
 
+::: video youtube
+PgEjAyLLTTM
+:::
+
 ## Install the Claudian Plugin
 
 Install the Claudian plugin in Obsidian.

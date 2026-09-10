@@ -6,6 +6,10 @@ sidebarSort: 100
 
 Install the `obsidian-sheet-plus` skill in OpenCode to automate spreadsheet data processing through the Sheet Plus REST API.
 
+::: video youtube
+vsK3Zv0ZK0U
+:::
+
 ## Installing Obsidian Sheet Plus Skill
 
 ::: tip Skill Sources
