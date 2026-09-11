@@ -6,6 +6,10 @@ sidebarSort: 320
 
 Run the DeepSeek Harness web UI inside Obsidian's webView to automate spreadsheet data processing with the Sheet Plus REST API.
 
+::: video youtube
+gGVUQbh8Gv8
+:::
+
 ## Start DeepSeek Harness
 
 ```bash
